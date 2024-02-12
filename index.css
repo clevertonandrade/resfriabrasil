@@ -1,30 +1,23 @@
 @import "./responsividade.css";
 
-/* configurações iniciais */
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    height: 100%;
+body {
     padding: 50px;
     margin: auto;
 
-    background-image: url(./imagens/Fundo.png);
-    background-repeat: repeat;
+    background-image: url(./assets/fundo.png);
     background-position: center center;
     font-family: Arial, Helvetica, sans-serif;
 
     max-width: 1300px;
-
 }
 
-/*cabeçalho*/
-
-header{
+header {
 
     margin-bottom: 25px;
     display: flex;
@@ -38,23 +31,31 @@ header{
     color: white;
 }
 
-header>h1{
+header>h1 {
     font-size: 2.2em;
 }
 
-header>div>p{
+header>div>p {
     font-size: 1.2em;
 }
 
-header>img{
-    border: 2px solid white;
-    border-radius: 30px;
-
-    width: 800px;
+header>.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
     height: 400px;
 }
 
-header>div>button{
+.image-container>img {
+    border: 2px solid white;
+    border-radius: 30px;
+
+    width: 100%;
+    height: 100%;
+}
+
+header>div>button {
     width: 200px;
     height: 50px;
 
@@ -63,18 +64,18 @@ header>div>button{
     border: 2px solid white;
     border-radius: 20px;
 
-    background-image: url(./imagens/Fundo.png);
+    background-image: url(./assets/fundo.png);
     background-position: center right;
 
     font-size: 1em;
 }
 
-header>div>button:hover{
-    background-image: url(./imagens/Fundo.png);
+header>div>button:hover {
+    background-image: url(./assets/fundo.png);
     background-position: top left;
 }
 
-.botao{
+.botao {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,14 +83,12 @@ header>div>button:hover{
     gap: 10px;
 }
 
-/*principal*/
-
-main{
+main {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
 
     padding-top: 25px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +96,7 @@ main{
 
 }
 
-section{
+section {
     width: 100%;
 
     display: flex;
@@ -111,41 +110,24 @@ section{
     color: white;
 }
 
-.ajuste>h1{
+.ajuste>h1 {
     font-size: 2.2em;
     margin-bottom: 10px;
     text-align: justify;
 }
 
-.ajuste>p{
+.ajuste>p {
     font-size: 1.2em;
 }
 
-section>img{
+section>img {
     width: 500px;
 
     border: 2px solid white;
     border-radius: 30px;
 }
 
-
-#imagem2{
-    background-image: url(./imagens/Quadrado01.png);
-    background-position: center center;
-}
-
-#imagem3{
-    background-image: url(./imagens/Quadrado02.png);
-    background-position: center center;
-}
-
-#imagem4{
-    background-image: url(./imagens/Quadrado03.png);
-    background-position: center center;
-}
-/*rodape*/
-
-footer{
+footer {
     padding-top: 10px;
     display: flex;
     align-items: center;
@@ -154,4 +136,3 @@ footer{
     color: white;
     text-align: justify;
 }
-
